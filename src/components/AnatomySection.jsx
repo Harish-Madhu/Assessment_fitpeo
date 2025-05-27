@@ -61,22 +61,3 @@ const AnatomySection = () => {
 };
 
 export default AnatomySection;
-
-// Example healthStatusData (adjust positions as needed)
-export const healthStatusData = [
-  {
-    id: 'heart',
-    label: 'Healthy Heart',
-    position: { top: '30%', left: '70%' },
-  },
-  {
-    id: 'lung',
-    label: 'Healthy Lung',
-    position: { top: '25%', left: '30%' },
-  },
-  {
-    id: 'leg',
-    label: 'Healthy Leg',
-    position: { top: '70%', left: '30%' },
-  },
-];
