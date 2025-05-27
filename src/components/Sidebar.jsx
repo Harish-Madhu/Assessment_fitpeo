@@ -1,15 +1,16 @@
 import React from 'react';
 import { navigationLinks } from '../data/navigationData';
+import { MessageSquare, Headphones, Settings } from 'lucide-react';
 
 const toolsLinks = [
-  { id: 'chat', label: 'Chat', icon: '💬', active: false },
-  { id: 'support', label: 'Support', icon: '🎧', active: false },
-  { id: 'setting', label: 'Setting', icon: '⚙️', active: false },
+  { id: 'chat', label: 'Chat', icon: MessageSquare, active: false },
+  { id: 'support', label: 'Support', icon: Headphones, active: false },
+  { id: 'setting', label: 'Setting', icon: Settings, active: false },
 ];
 
 const Sidebar = () => {
   return (
-    <aside className="w-60 bg-indigo-80 shadow-lg shadow-gray-300 border-r border-gray-200 h-screen fixed left-0 top-0 z-10">
+    <aside className="w-60 bg-indigo-100 shadow-lg shadow-gray-300 border-r border-gray-200 h-screen fixed left-0 top-0 z-10">
       <div className="p-6">
         <h1 className="text-2xl font-bold text-teal-500 tracking-tight mb-8">Health<span className="text-gray-700">care.</span></h1>
         
@@ -21,7 +22,9 @@ const Sidebar = () => {
               href="#"
               className={`sidebar-link group ${link.active ? 'active' : ''}`}
             >
-              <span className="mr-3 text-lg">{link.icon}</span>
+              <span className="mr-3 text-lg">
+                {React.createElement(link.icon, { size: 20 })}
+              </span>
               <span className="font-medium text-sm">{link.label}</span>
             </a>
           ))}
@@ -35,7 +38,9 @@ const Sidebar = () => {
               href="#"
               className={`sidebar-link group ${link.active ? 'active' : ''}`}
             >
-              <span className="mr-3 text-lg">{link.icon}</span>
+              <span className="mr-3 text-lg">
+                {React.createElement(link.icon, { size: 20 })}
+              </span>
               <span className="font-medium text-sm">{link.label}</span>
             </a>
           ))}
