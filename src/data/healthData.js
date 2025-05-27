@@ -3,17 +3,17 @@ export const healthStatusData = [
   {
     id: 'heart',
     label: 'Healthy Heart',
-    position: { top: '20%', left: '50%' },
+    position: { top: '25%', left: '82%' },
   },
   {
     id: 'lung',
     label: 'Healthy Lung',
-    position: { top: '30%', left: '45%' },
+    position: { top: '33%', left: '73%' },
   },
   {
     id: 'leg',
     label: 'Healthy Leg',
-    position: { top: '70%', left: '35%' },
+    position: { top: '70%', left: '60%' },
   },
 ];
 
