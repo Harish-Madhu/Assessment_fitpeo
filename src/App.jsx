@@ -6,7 +6,7 @@ import DashboardMainContent from './components/DashboardMainContent';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 healthcare-dashboard">
+    <div className="min-h-screen bg-gray-60 healthcare-dashboard">
       <Sidebar />
       <Header />
       <DashboardMainContent />
