@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Custom healthcare dashboard styles */
+:root {
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-500: #3b82f6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+  --teal-500: #14b8a6;
+  --indigo-600: #4f46e5;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200;
+}
+
+.sidebar-link {
+  @apply flex items-center px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors duration-200;
+}
+
+.sidebar-link.active {
+  @apply bg-blue-50 text-blue-700 border-r-2 border-blue-500;
+}
+
+.health-indicator {
+  @apply absolute w-3 h-3 rounded-full shadow-sm;
+}
+
+.health-indicator.healthy {
+  @apply bg-green-500;
+}
+
+.health-indicator.warning {
+  @apply bg-yellow-500;
+}
+
+.health-indicator.critical {
+  @apply bg-red-500;
+}
+
+.appointment-card {
+  @apply bg-white p-4 rounded-lg border border-gray-100 hover:border-gray-200 transition-colors duration-200;
+}
+
+.calendar-day {
+  @apply w-10 h-10 flex items-center justify-center text-sm rounded-lg hover:bg-gray-50 transition-colors duration-200;
+}
+
+.calendar-day.today {
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.calendar-day.has-appointment {
+  @apply bg-blue-50 text-blue-700 font-medium;
+}
